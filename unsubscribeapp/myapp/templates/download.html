@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Download Emails - My Django App{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="row">
+        <div class="col-md-6 col-lg-7 mx-auto"> <!-- Centered the column with mx-auto -->
+            <main class="form-signin">
+                <form action="{% url 'download_emails' %}" method="post">
+                    {% csrf_token %}
+                    <h1 class="h3 mb-3 fw-normal text-center">Download Emails</h1>
+                    <p class="text-center">To download emails, please enter your password below and press the Download button.</p>
+
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password" required>
+                        <label for="floatingPassword">Password</label>
+                    </div>
+
+                    {% if error_message %}
+                        <p class="text-danger text-center">{{ error_message }}</p>
+                    {% endif %}
+
+                    <button class="btn btn-primary w-100 py-2" type="submit">Download</button>
+                </form>
+            </main>
+        </div>
+    </div>
+</div>
+{% endblock %}
