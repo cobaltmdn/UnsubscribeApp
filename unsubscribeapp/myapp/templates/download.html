@@ -5,12 +5,11 @@
 {% block content %}
 <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
     <div class="row">
-        <div class="col-md-6 col-lg-7 mx-auto"> <!-- Centered the column with mx-auto -->
+        <div class="col-md-6 col-lg-8 mx-auto"> <!-- Centered the column with mx-auto -->
             <main class="form-signin">
-                <form action="{% url 'download_emails' %}" method="post">
+                <form action="{% url 'edit_emails' %}" method="post">
                     {% csrf_token %}
-                    <h1 class="h3 mb-3 fw-normal text-center">Download Emails</h1>
-                    <p class="text-center">To download emails, please enter your password below and press the Download button.</p>
+                    <h1 class="h3 mb-3 fw-normal text-center">Enter Password to Edit/Download Emails</h1>
 
                     <div class="form-floating mb-3">
                         <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password" required>
@@ -21,7 +20,7 @@
                         <p class="text-danger text-center">{{ error_message }}</p>
                     {% endif %}
 
-                    <button class="btn btn-primary w-100 py-2" type="submit">Download</button>
+                    <button class="btn btn-primary w-100 py-2" type="submit">Submit</button>
                 </form>
             </main>
         </div>

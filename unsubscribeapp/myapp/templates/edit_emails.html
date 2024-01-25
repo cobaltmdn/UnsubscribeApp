@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit Emails - My Django App{% endblock %}
+
+{% block content %}
+<header class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4 border-bottom">
+    <div class="ms-auto pe-3">
+        <form action="{% url 'download_emails' %}" method="post" class="d-inline">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-primary ms-2">Download All Emails</button>
+        </form>
+        <form id="delete-form" action="{% url 'delete_emails' %}" method="post" class="d-inline">
+            {% csrf_token %}
+            <div id="hidden-checkboxes" style="display: none;"></div>
+            <button type="submit" class="btn btn-danger">Delete Selected</button>
+        </form>
+    </div>
+</header>
+
+<div class="container">
+    <h1>Edit Emails</h1>
+    {% if page_obj.has_other_pages %}
+        <div class="pagination">
+            <span class="step-links">
+                {% if page_obj.has_previous %}
+                    <a href="?page=1">&laquo; first</a>
+                    <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+                {% endif %}
+
+                <span class="current">
+                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                </span>
+
+                {% if page_obj.has_next %}
+                    <a href="?page={{ page_obj.next_page_number }}">next</a>
+                    <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                {% endif %}
+            </span>
+        </div>
+    {% endif %}
+
+    <!-- Columns for emails -->
+    <div class="row">
+        {% for email in page_obj %}
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-3">
+                <input type="checkbox" class="email-checkbox" data-email="{{ email.address }}" id="email_{{ forloop.counter }}">
+                <label for="email_{{ forloop.counter }}">{{ email.address }}</label>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.email-checkbox').forEach(function(checkbox) {
+        checkbox.addEventListener('change', function() {
+            var hiddenContainer = document.getElementById('hidden-checkboxes');
+            hiddenContainer.innerHTML = '';
+            document.querySelectorAll('.email-checkbox:checked').forEach(function(checkedBox) {
+                var input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'emails';
+                input.value = checkedBox.dataset.email;
+                hiddenContainer.appendChild(input);
+            });
+        });
+    });
+</script>
+
+{% endblock %}
