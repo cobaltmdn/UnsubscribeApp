@@ -61,3 +61,16 @@ def download_emails(request):
         return response
     else:
         return render(request, 'download.html')
+
+
+def search_emails(request):
+    query = request.GET.get('query', '')
+    if query:
+        emails = Email.objects.filter(address__icontains=query).order_by('id')
+        paginator = Paginator(emails, 10)
+        page_number = request.GET.get('page')
+        page_obj = paginator.get_page(page_number)
+
+        return render(request, 'edit_emails.html', {'page_obj': page_obj, 'query': query})
+    else:
+        return redirect('edit_emails')
