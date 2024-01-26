@@ -3,17 +3,42 @@
 {% block title %}Edit Emails - My Django App{% endblock %}
 
 {% block content %}
+<style>
+/* Custom styles for alignment */
+.header-search-form {
+  margin-top: 8px; /* Adjust this value as needed to move the search bar down */
+}
+
+/* Ensuring all buttons are aligned and have the same size */
+.btn-header {
+  vertical-align: top; /* Align the buttons to the top to match the search bar alignment */
+  height: 38px; /* Adjust the height as needed to match the search bar */
+}
+
+.form-control-header {
+  height: 38px; /* Adjust the height as needed to match the buttons */
+}
+</style>
+
 <header class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4 border-bottom">
+    <a href="{% url 'edit_emails' %}" class="btn btn-outline-info ms-2 btn-header">All Emails</a>
     <div class="ms-auto pe-3">
         <form action="{% url 'download_emails' %}" method="post" class="d-inline">
             {% csrf_token %}
-            <button type="submit" class="btn btn-primary ms-2">Download All Emails</button>
+            <button type="submit" class="btn btn-primary ms-2 btn-header">Download All Emails</button>
         </form>
         <form id="delete-form" action="{% url 'delete_emails' %}" method="post" class="d-inline">
             {% csrf_token %}
             <div id="hidden-checkboxes" style="display: none;"></div>
-            <button type="submit" class="btn btn-danger">Delete Selected</button>
+            <button type="submit" class="btn btn-danger btn-header">Delete Selected</button>
         </form>
+
+        <!-- Adjusted search form with a custom class for more specific styling -->
+        <form action="{% url 'search_emails' %}" method="get" class="d-inline header-search-form">
+            <input type="text" name="query" placeholder="Search Emails" class="form-control d-inline-block form-control-header" style="width: auto; margin-left: 10px;">
+            <button type="submit" class="btn btn-outline-secondary btn-header">Search</button>
+        </form>
+
     </div>
 </header>
 
