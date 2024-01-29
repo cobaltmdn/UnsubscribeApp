@@ -24,7 +24,7 @@ def index(request):
 def get_emails(request):
     if request.method == 'POST':
         password = request.POST.get('password')
-        if password == 'admin':
+        if password == 'ReSW96D2AqlZ':
             return redirect('edit_emails')
         else:
             return render(request, 'download.html', {'error_message': 'Invalid password'})
