@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY = 'django-insecure-s=^1u2^u@m#04e4wdg!a$7l4eb1_llj0te&&+ugi4jo6$!e-5+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['unsubscribe-app-57bda8f4af9c.herokuapp.com','127.0.0.1', ".unsubv1.site", ".unsubv2.site", ".unsubv3.site", ".unsubv4.site" , ".unsubv5.site"]
 
