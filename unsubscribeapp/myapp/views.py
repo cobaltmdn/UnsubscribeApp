@@ -33,16 +33,13 @@ def get_emails(request):
 
 
 def edit_emails(request):
-    if request.method == 'POST':
-        email_list = Email.objects.all().order_by('id')
-        paginator = Paginator(email_list, 200)
-    
-        page_number = request.GET.get('page')
-        page_obj = paginator.get_page(page_number)
-    
-        return render(request, 'edit_emails.html', {'page_obj': page_obj})
-    else:
-        return render(request, 'download.html')
+    email_list = Email.objects.all().order_by('id')
+    paginator = Paginator(email_list, 200)
+
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
+    return render(request, 'edit_emails.html', {'page_obj': page_obj})
 
 
 def delete_emails(request):
