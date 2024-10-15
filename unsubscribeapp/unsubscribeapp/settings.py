@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'unsubscribeapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dfhvdrcfe1gi4k',
-        'USER': 'dlbgsonknbjpyg',
-        'PASSWORD': '71d9ef200f3262b05f2c81458e660831f77a52f03bf56c47240c8584827d1c22',
-        'HOST': 'ec2-54-220-19-50.eu-west-1.compute.amazonaws.com',  # Or an IP Address that your DB is hosted on
+        'NAME': 'daecv5i5qj0c86',
+        'USER': 'u1tu9dioooo5ba',
+        'PASSWORD': 'pbedb6f2fcbf6efe2f5b5ae52ddf9e304c31c8795dddc62faf1b098dcb6a596ef',
+        'HOST': 'c3b50so8id8nre.cluster-czz5s0kz4scl.eu-west-1.rds.amazonaws.com',  # Or an IP Address that your DB is hosted on
         'PORT': '5432',
     }
 }
