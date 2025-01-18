@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["unsubscribe-app-57bda8f4af9c.herokuapp.com", "127.0.0.1", ".unsubv5.site", ".unsubv6.site", ".unsubv9.site", ".unsubv10.site", ".unsubv11.site", ".unsubv12.site", ".unsubv13.site", ".unsubv14.site"]
+ALLOWED_HOSTS = ["unsubscribe-app-57bda8f4af9c.herokuapp.com", "127.0.0.1", ".unsubv9.site", ".unsubv10.site", ".unsubv11.site", ".unsubv12.site", ".unsubv13.site", ".unsubv14.site", ".unsubunlistme.site", ".unsubscrammail.site", ".unsubremoveme.site", ".unsubquitme.site", ".unsuboutofhere.site", ".unsubofflist.site", ".unsubnothanks.site", ".unsubexitmail.site", ".unsubdropmail.site", ".unsubbyespam.site"]
 
 
 # Application definition
