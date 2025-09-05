@@ -46,6 +46,16 @@ ALLOWED_HOSTS = [
     ".unsubv12.site",
     ".unsubv13.site",
     ".unsubv14.site",
+    ".emaildelete.xyz",
+    ".removeme.online",
+    ".unsubai.space",
+    ".cobradel.online",
+    ".levelingunsub.xyz",
+    ".galaofluck.com",
+    ".loomify360.com",
+    ".solounsub.live",
+    ".staykindle.com",
+    ".voyageharbor.com",    
 ]
 
 
