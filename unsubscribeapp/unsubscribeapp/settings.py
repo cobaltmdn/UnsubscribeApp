@@ -56,8 +56,17 @@ ALLOWED_HOSTS = [
     ".solounsub.live",
     ".staykindle.com",
     ".voyageharbor.com",    
+    "www.mncunsubme.online",
+    "www.mncunsubme.store",
+    "www.munsubey.online",
+    "www.munsubey.store",
+    "www.myncunsubee.online",
+    "www.myncunsubee.store",
+    "www.myncunsubme.online",
+    "www.myncunsubme.store",
+    "www.myunsubne.online",
+    "www.myunsubne.store",
 ]
-
 
 
 # Application definition
