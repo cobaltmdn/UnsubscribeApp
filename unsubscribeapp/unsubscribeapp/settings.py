@@ -110,7 +110,38 @@ ALLOWED_HOSTS = [
     ".myunsubne.online",
     "myunsubne.store",
     ".myunsubne.store",
+
+    # DODANE DOMENE – root i wildcard
+    "link-for-unsubscribe.site",
+    ".link-for-unsubscribe.site",
+    "unsubscribe-now.site",
+    ".unsubscribe-now.site",
+    "clean-inbox.site",
+    ".clean-inbox.site",
+    "mail-settings.site",
+    ".mail-settings.site",
+    "prefs-manager.site",
+    ".prefs-manager.site",
+    "list-control.site",
+    ".list-control.site",
+    "no-more-mails.site",
+    ".no-more-mails.site",
+    "optout-center.site",
+    ".optout-center.site",
+    "email-unsubscribe.site",
+    ".email-unsubscribe.site",
+    "manage-preferences.site",
+    ".manage-preferences.site",
+    "stop-my-mails.site",
+    ".stop-my-mails.site",
+    "go-unsubscribe.site",
+    ".go-unsubscribe.site",
+    "mail-optout.site",
+    ".mail-optout.site",
+    "unsubscribe-hub.site",
+    ".unsubscribe-hub.site",
 ]
+
 
 
 
