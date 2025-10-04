@@ -75,16 +75,7 @@ ALLOWED_HOSTS = [
     "unsubseeyou.site",
     ".unsubseeyou.site",
     "www.unsubseeyou.site",
-    "unsubv12.site",
-    ".unsubv12.site",
-    "www.unsubv12.site",
-    "unsubv13.site",
-    ".unsubv13.site",
-    "www.unsubv13.site",
-    "unsubv14.site",
-    ".unsubv14.site",
-    "www.unsubv14.site",
-
+  
     # Ostale stare domene – root, wildcard i www
     "emaildelete.xyz",
     ".emaildelete.xyz",
