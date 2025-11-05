@@ -92,15 +92,9 @@ ALLOWED_HOSTS = [
     "levelingunsub.xyz",
     ".levelingunsub.xyz",
     "www.levelingunsub.xyz",
-    "galaofluck.com",
-    ".galaofluck.com",
-    "www.galaofluck.com",
     "loomify360.com",
     ".loomify360.com",
     "www.loomify360.com",
-    "solounsub.live",
-    ".solounsub.live",
-    "www.solounsub.live",
     "staykindle.com",
     ".staykindle.com",
     "www.staykindle.com",
@@ -198,10 +192,6 @@ ALLOWED_HOSTS = [
     ".unsubheal.site",
     "www.unsubheal.site",
 ]
-
-
-
-
 
 # Application definition
 
