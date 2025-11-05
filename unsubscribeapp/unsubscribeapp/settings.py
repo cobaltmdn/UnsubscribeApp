@@ -95,9 +95,6 @@ ALLOWED_HOSTS = [
     "loomify360.com",
     ".loomify360.com",
     "www.loomify360.com",
-    "staykindle.com",
-    ".staykindle.com",
-    "www.staykindle.com",
     "voyageharbor.com",
     ".voyageharbor.com",
     "www.voyageharbor.com",
@@ -156,21 +153,12 @@ ALLOWED_HOSTS = [
     "optout-center.site",
     ".optout-center.site",
     "www.optout-center.site",
-    "email-unsubscribe.site",
-    ".email-unsubscribe.site",
-    "www.email-unsubscribe.site",
     "manage-preferences.site",
     ".manage-preferences.site",
     "www.manage-preferences.site",
     "stop-my-mails.site",
     ".stop-my-mails.site",
     "www.stop-my-mails.site",
-    "go-unsubscribe.site",
-    ".go-unsubscribe.site",
-    "www.go-unsubscribe.site",
-    "mail-optout.site",
-    ".mail-optout.site",
-    "www.mail-optout.site",
     "unsubscribe-hub.site",
     ".unsubscribe-hub.site",
     "www.unsubscribe-hub.site",
@@ -192,6 +180,7 @@ ALLOWED_HOSTS = [
     ".unsubheal.site",
     "www.unsubheal.site",
 ]
+
 
 # Application definition
 
