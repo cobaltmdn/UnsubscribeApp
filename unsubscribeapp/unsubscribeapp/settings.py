@@ -30,9 +30,6 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
 
   # SVE "unsub..." domene – root, wildcard i www
-"unsubadios.site",
-".unsubadios.site",
-"www.unsubadios.site",
 "unsubbeoff.site",
 ".unsubbeoff.site",
 "www.unsubbeoff.site",
