@@ -207,6 +207,17 @@ ALLOWED_HOSTS = [
     "unsubyourself.sbs",
     ".unsubyourself.sbs",
     "www.unsubyourself.sbs",
+
+    # Nove 3 domene – root, wildcard i www
+    "unsubpo.site",
+    ".unsubpo.site",
+    "www.unsubpo.site",
+    "unsubvu.site",
+    ".unsubvu.site",
+    "www.unsubvu.site",
+    "unsubword.site",
+    ".unsubword.site",
+    "www.unsubword.site",
 ]
 
 
