@@ -190,6 +190,23 @@ ALLOWED_HOSTS = [
     "firstunsub.site",
     ".firstunsub.site",
     "www.firstunsub.site",
+
+    # Novih 5 domena – root, wildcard i www
+    "unsub4ever.space",
+    ".unsub4ever.space",
+    "www.unsub4ever.space",
+    "unsubbedohno.store",
+    ".unsubbedohno.store",
+    "www.unsubbedohno.store",
+    "unsubbingyou.xyz",
+    ".unsubbingyou.xyz",
+    "www.unsubbingyou.xyz",
+    "unsubscribeyou.store",
+    ".unsubscribeyou.store",
+    "www.unsubscribeyou.store",
+    "unsubyourself.sbs",
+    ".unsubyourself.sbs",
+    "www.unsubyourself.sbs",
 ]
 
 
