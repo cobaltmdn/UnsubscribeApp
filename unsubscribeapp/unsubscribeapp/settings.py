@@ -218,9 +218,9 @@ ALLOWED_HOSTS = [
     "unsubword.site",
     ".unsubword.site",
     "www.unsubword.site",
-    "unsubmefromthis.site",
-    ".unsubmefromthis.site",
-    "www.unsubmefromthis.site",
+    "thisistheunsub.site",
+    ".thisistheunsub.site",
+    "www.thisistheunsub.site",
 ]
 
 
